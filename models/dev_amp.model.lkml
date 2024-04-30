@@ -26,3 +26,4 @@ persist_with: dev_amp_default_datagroup
 # Each joined view also needs to define a primary key.
 
 explore: amp_all {}
+explore: amp6 {}
