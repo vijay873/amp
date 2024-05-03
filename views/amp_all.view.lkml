@@ -361,6 +361,7 @@ view: amp_all {
   dimension: event_properties_number_of_bags {
     type: number
     sql: ${TABLE}.`event_properties_Number of Bags` ;;
+    value_format: "0.000,\" K\""
   }
 
   dimension: event_properties_number_of_passengers {
