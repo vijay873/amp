@@ -16,6 +16,13 @@ view: amp_all {
     sql: ${TABLE}.adid ;;
   }
 
+
+  dimension: event_date{
+    type: date
+    sql:CONVERT_STRING_TO_DATE(substring(${TABLE}.event_time,1,10), '%Y-%m-%d')  ;;
+  }
+
+
   dimension: amplitude_attribution_ids {
     type: string
     sql: ${TABLE}.amplitude_attribution_ids ;;
