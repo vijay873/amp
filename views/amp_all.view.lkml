@@ -19,7 +19,7 @@ view: amp_all {
 
   dimension: event_date{
     type: date
-    sql:CONVERT_STRING_TO_DATE(substring(${TABLE}.event_time,1,10), '%Y-%m-%d')  ;;
+    sql:date(substring(${TABLE}.event_time,1,10))  ;;
   }
 
 
